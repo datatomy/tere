@@ -1,0 +1,73 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+.navHovers:hover {
+    color: var(--bs-indigo) !important;
+}
+
+.fotoTere {
+    width: 100vw !important;
+    height: 90vh !important;
+    background-image: url(terefoto.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+.fotoTere::before {
+    content: '';
+    width: 40%;
+    height: 90vh;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background: rgba(46,51,73,0.75);
+}
+
+@media (max-width: 576px) {
+    .fotoTere::before {
+    background: rgba(46,51,73,0.5);
+    width: 100%;
+    }
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,16,242, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;  
+}
+.custom-toggler.navbar-toggler {
+    border-color: #6610f2 !important;
+} 
+.nombreTitulo{
+font-weight: 800; 
+font-size: 3rem;
+}
+
+@media (min-width: 576px) {
+    .nombreTitulo {
+        font-size: 5rem !important;
+    }
+}
+@media (max-width: 300px) {
+    .nombreTitulo {
+        font-size: 2rem !important;
+    }
+}
+
+.topTitulo {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.hr1 {
+    width: 5rem;
+    background-color: #6610f2;
+    height: 3px !important;
+}
+
+.hr2 {
+    width: 3rem;
+    background-color: #6610f2;
+    height: 2px !important;
+}
