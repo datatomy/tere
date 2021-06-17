@@ -1,9 +1,11 @@
 * {
     font-family: 'Work Sans', sans-serif;
+    --main-color: #6610f2;
+    /* Cambiar stroke (en rgb) de .custom-toggler .navbar-toggler-icon */
   }
 
 .navHovers:hover {
-    color: var(--bs-indigo) !important;
+    color: var(--main-color) !important;
 }
 
 .fotoTere {
@@ -35,7 +37,7 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,16,242, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;  
 }
 .custom-toggler.navbar-toggler {
-    border-color: #6610f2 !important;
+    border-color: var(--main-color) !important;
 } 
 .nombreTitulo{
 font-weight: 800; 
@@ -62,12 +64,12 @@ font-size: 3rem;
 
 .hr1 {
     width: 5rem;
-    background-color: #6610f2;
+    background-color: var(--main-color);
     height: 3px !important;
 }
 
 .hr2 {
     width: 3rem;
-    background-color: #6610f2;
+    background-color: var(--main-color);
     height: 2px !important;
 }
