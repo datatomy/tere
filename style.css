@@ -117,6 +117,22 @@ font-size: 3rem;
 }
 
 #gmailBox {
-    min-height: 251px !important;
-    max-height: 251px !important;
+    min-height: 256px !important;
+    max-height: 256px !important;
+
 }
+
+.tarcontacto {
+    border-bottom: 5px solid var(--main-color);
+    background-color: var(--bs-white);
+    transition: border-style 5s ease-in-out;
+}
+
+i {
+    color: var(--main-color);
+}
+
+.tarcontacto:hover {
+    border: 5px solid var(--main-color);;
+}
+
