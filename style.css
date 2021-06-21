@@ -2,6 +2,7 @@
     font-family: 'Work Sans', sans-serif;
     --main-color: #B157B8;
     /* Cambiar stroke (en rgb) de .custom-toggler .navbar-toggler-icon */
+    scroll-behavior: smooth !important;
   }
 
 .navHovers:hover {
@@ -54,6 +55,25 @@ font-size: 3rem;
         font-size: 2rem !important;
     }
 }
+
+#typeText {
+    overflow: hidden; 
+    border-right: .15em solid var(--main-color); 
+    white-space: nowrap; 
+    animation:  typing 7s steps(9) 1s 1 normal both,
+                blink-caret 600ms steps(15) 15 normal;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 115px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--main-color); }
+  }
 
 .topTitulo {
     font-weight: 600;
@@ -125,14 +145,15 @@ font-size: 3rem;
 .tarcontacto {
     border-bottom: 5px solid var(--main-color);
     background-color: var(--bs-white);
-    transition: border-style 5s ease-in-out;
+    transition: all 0.5s ease-out;
 }
 
-i {
-    color: var(--main-color);
+.textoContacto {
+    color: black;
 }
 
 .tarcontacto:hover {
-    border: 5px solid var(--main-color);;
+    border-bottom: 5px solid black;
+    background-color: var(--main-color);
+    color: var(--bs-white) !important;
 }
-
