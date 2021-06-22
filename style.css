@@ -2,11 +2,14 @@
     font-family: 'Work Sans', sans-serif;
     --main-color: #B157B8;
     /* Cambiar stroke (en rgb) de .custom-toggler .navbar-toggler-icon */
-    scroll-behavior: smooth !important;
   }
 
 .navHovers:hover {
     color: var(--main-color) !important;
+}
+
+nav {
+    transition: .5s all ease;
 }
 
 .fotoTere {
@@ -37,9 +40,38 @@
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(177,87,184, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;  
 }
+
 .custom-toggler.navbar-toggler {
     border-color: var(--main-color) !important;
-} 
+}
+
+.secciones::before {       
+    display: block;       
+    content: " ";     
+    margin-top: -50px;       
+    height: 50px;       
+    visibility: hidden; 
+}
+
+#typeText {
+    overflow: hidden; 
+    border-right: .15em solid var(--main-color); 
+    white-space: nowrap; 
+    animation:  typing 4s steps(8) .5s 1 normal both,
+                blink-caret 600ms steps(15) 15 normal;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 112px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--main-color); }
+  } 
+
 .nombreTitulo{
 font-weight: 800; 
 font-size: 3rem;
@@ -55,25 +87,6 @@ font-size: 3rem;
         font-size: 2rem !important;
     }
 }
-
-#typeText {
-    overflow: hidden; 
-    border-right: .15em solid var(--main-color); 
-    white-space: nowrap; 
-    animation:  typing 7s steps(9) 1s 1 normal both,
-                blink-caret 600ms steps(15) 15 normal;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 115px }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--main-color); }
-  }
 
 .topTitulo {
     font-weight: 600;
@@ -136,20 +149,22 @@ font-size: 3rem;
     }
 }
 
-#gmailBox {
+#tarMail {
     min-height: 256px !important;
     max-height: 256px !important;
-
 }
 
 .tarcontacto {
     border-bottom: 5px solid var(--main-color);
     background-color: var(--bs-white);
+    color: black;
     transition: all 0.5s ease-out;
 }
 
-.textoContacto {
-    color: black;
+i {
+    font-size: 3rem;
+    color: var(--main-color);
+    transition: all 0.5s ease-out;
 }
 
 .tarcontacto:hover {

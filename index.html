@@ -11,13 +11,14 @@
     <title>Tere Bonassies</title>
 </head>
 <body class="bg-light">
+  
   <header class="header">
-      <nav id="menu" class="navbar navbar-expand-md navbar-light shadow fixed-top pb-1 pt-1" style="background-color: var(--bs-white);">
+      <nav id="menu" class="navbar navbar-expand-md navbar-light shadow fixed-top py-2" style="background-color: var(--bs-white);">
         <div class="container" style="font-weight: 800; font-size: 1rem;">
           <a class="navbar-brand" href="#">
-            <span style="color: var(--bs-black); font-size: 3rem;">T</span>
-            <span style="color: var(--main-color); font-size: 3rem;">B</span>
-            <span style="color: var(--bs-black); font-size: 3rem;">.</span>
+            <span id="spanLogo" style="color: var(--bs-black); font-size: 3rem;">T</span>
+            <span id="spanLogo" style="color: var(--main-color); font-size: 3rem;">B</span>
+            <span id="spanLogo" style="color: var(--bs-black); font-size: 3rem;">.</span>
           </a>
           <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,7 +52,7 @@
       <div class="container d-flex align-content-center justify-content-start">
         <div class="row d-flex align-content-center justify-content-start">
           <div class="col-md-8 text-white d-flex flex-column align-content-center justify-content-start" style="z-index: 90;">
-            <h4 style="color: var(--main-color);">Hola, soy</h4>
+            <h4 style="color: var(--main-color);" id="navChico">Hola, soy</h4>
             <h1 class="nombreTitulo text-uppercase">Tere <span style="color: var(--main-color);">Bonassies</span></h1>
             <h4 class="mb-5" id="typeText">Cocinera.</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit impedit, similique sint aut ipsa, beatae quisquam voluptatum obcaecati minus eos error commodi officia ad? Praesentium aut inventore obcaecati ullam nobis.</p>
@@ -60,9 +61,9 @@
       </div>
   </div>
 
-  <div id="tereSection" style="padding-top: 40px; display: unset;"></div> 
+  <div id="tereSection" class="secciones"></div> 
   <div class="container-fluid">
-    <div class="container mb-5 mt-5 pb-5 pt-5">
+    <div class="container pt-5 mt-4 pb-4">
       <div class="row">
         <div class="col-lg-6">
           <p class="topTitulo text-uppercase" style="color: var(--main-color);">Prueba Prueba</p>
@@ -104,9 +105,9 @@
     </div>
   </div>
 
-  <div id="skillsSection" style="padding-top: 40px; display: unset;"></div>
+  <div id="skillsSection" class="secciones"></div>
   <div class="container-fluid" style="background-color: var(--bs-white);">
-    <div class="container mb-5 mt-5 pb-5 pt-5">
+    <div class="container pt-5 mt-4 pb-4">
       <div class="row">
         <div class="col">
           <p class="topTitulo text-uppercase" style="color: var(--main-color);">Prueba Prueba</p>
@@ -136,9 +137,9 @@
     </div>
   </div>  
 
-  <div id="experienciaSection" style="padding-top: 40px; display: unset;"></div>
+  <div id="experienciaSection" class="secciones"></div>
   <div class="container-fluid">
-  <div class="container mb-5 mt-5 pb-5 pt-5">
+  <div class="container pt-5 mt-4 pb-4">
     <div class="row">
       <div class="col">
         <p class="topTitulo text-uppercase" style="color: var(--main-color);">Prueba Prueba</p>
@@ -210,9 +211,9 @@
   </div>
   </div>
 
-  <div id="educacionSection" style="padding-top: 40px; display: unset;"></div>
+  <div id="educacionSection" class="secciones"></div>
   <div class="container-fluid" style="background-color: var(--bs-white);">
-    <div class="container mb-5 mt-5 pb-5 pt-5">
+    <div class="container pt-5 mt-4 pb-4">
       <div class="row">
         <div class="col">
           <p class="topTitulo text-uppercase" style="color: var(--main-color);">Prueba Prueba</p>
@@ -270,9 +271,9 @@
     </div>
   </div>
 
-  <div id="contactoSection" style="padding-top: 40px; display: unset;"></div>
+  <div id="contactoSection" class="secciones"></div>
   <div class="container-fluid">
-    <div class="container mb-5 mt-5 pb-5 pt-5">
+    <div class="container pt-5 mt-4 pb-4">
       <div class="row">
         <div class="col">
           <p class="topTitulo text-uppercase" style="color: var(--main-color);">Prueba Prueba</p>
@@ -281,39 +282,41 @@
           <hr class="hr2 p-0 m-0 mb-5">
         </div>
       </div>
-      <div class="row" style="color: var(--main-color)">
+      <div class="row">
         <div class="col-12 mb-4 col-sm-6 col-lg-3">
-          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto">
-            <i class="bi-whatsapp" style="font-size: 3rem;"></i>
-            <h5 class="textoContacto contact-item-title topTitulo2 text-uppercase mt-3">Whatsapp</h5>
-            <p class="textoContacto text-small">+54 9 2235475010</p>
+          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto" id="tarWhatsapp">
+            <i class="bi-whatsapp" id="iconoWhatsapp"></i>
+            <h5 class="contact-item-title topTitulo2 text-uppercase mt-3">Whatsapp</h5>
+            <p class="text-small">+54 9 2235475010</p>
           </div>
         </div>
         <div class="col-12 mb-4 col-sm-6 col-lg-3">
-          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto" id="gmailBox">
-            <i class="bi-envelope-open" style="font-size: 3rem;"></i>
-            <h5 class="textoContacto contact-item-title topTitulo2 text-uppercase mt-3">Mail</h5>
-            <p class="textoContacto text-small" id="gmail">teresitadejesusbonassies@gmail.com</p>
+          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto" id="tarMail" id="gmailBox">
+            <i class="bi-envelope-open" id="iconoMail"></i>
+            <h5 class="contact-item-title topTitulo2 text-uppercase mt-3">Mail</h5>
+            <p class="text-small" id="gmail">teresitadejesusbonassies@gmail.com</p>
           </div>
         </div>
         <div class="col-12 mb-4 col-sm-6 col-lg-3">
-          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto">
-            <i class="bi-instagram" style="font-size: 3rem;"></i>
-            <h5 class="textoContacto contact-item-title topTitulo2 text-uppercase mt-3">Instagram</h5>
-            <p class="textoContacto text-small">@terebonassies</p>
+          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto" id="tarInstagram">
+            <i class="bi-instagram" id="iconoInstagram"></i>
+            <h5 class="contact-item-title topTitulo2 text-uppercase mt-3">Instagram</h5>
+            <p class="text-small">@terebonassies</p>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto">
-            <i class="bi-facebook" style="font-size: 3rem;"></i>
-            <h5 class="textoContacto contact-item-title topTitulo2 text-uppercase mt-3">Facebook</h5>
-            <p class="textoContacto text-small">/tere.bonassies</p>
+          <div class="px-4 py-5 text-center contact-item shadow rounded-bottom tarcontacto" id="tarFacebook">
+            <i class="bi-facebook" id="iconoFacebook"></i>
+            <h5 class="contact-item-title topTitulo2 text-uppercase mt-3">Facebook</h5>
+            <p class="text-small">/tere.bonassies</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquerycustom.js"></script>
 </body>
 </html>
