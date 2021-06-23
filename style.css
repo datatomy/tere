@@ -113,6 +113,10 @@ font-size: 3rem;
     height: 2px !important;
 }
 
+#carouselExampleIndicators {
+    border-bottom: 3px solid var(--main-color);
+}
+
 @media (max-width: 318px) {
     #gmail {
         font-size: 0.6rem !important;
@@ -183,11 +187,55 @@ i {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s linear;
 }
 
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
 .redes {
-    border-radius: 50%;
-    border: 2px solid #ddd;
+    border-bottom: 2px solid var(--main-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-top: 2px solid #ddd;
     color: #aaa;
     transition: all 0.3s;
     font-size: 1.3rem;
@@ -198,8 +246,9 @@ i {
 }
 
 .redes:hover {
-    color: var(--main-color);
+    color: var(--bs-white);
     border: 2px solid var(--main-color);
+    background-color: var(--main-color);
 }
 
 footer {
