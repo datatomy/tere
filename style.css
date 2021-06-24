@@ -252,7 +252,7 @@ i {
 }
 
 footer {
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,4 +260,17 @@ footer {
 
 .footerP {
     margin: auto;
+    font-size: 8.5px;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .footerP {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 701px) {
+    .footerP {
+        font-size: 13px;
+    }
 }
