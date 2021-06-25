@@ -45,6 +45,7 @@ nav {
     border-color: var(--main-color) !important;
 }
 
+
 .secciones::before {       
     display: block;       
     content: " ";     
@@ -115,6 +116,11 @@ font-size: 3rem;
 
 #carouselExampleIndicators {
     border-bottom: 3px solid var(--main-color);
+}
+
+.fotosGaleria {
+    max-height: 463px;
+    object-fit: cover;
 }
 
 @media (max-width: 318px) {
