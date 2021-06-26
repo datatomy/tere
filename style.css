@@ -17,7 +17,7 @@ nav {
     height: 90vh !important;
     background-image: url(terefoto.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 } 
 
 .fotoTere::before {
