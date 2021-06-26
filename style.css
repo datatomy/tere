@@ -124,6 +124,13 @@ font-size: 3rem;
     object-fit: cover;
 }
 
+@media (max-width: 520px){
+    .fotosGaleria {
+        min-height: 270px;
+        max-height: 270px;
+    }
+}
+
 @media (max-width: 318px) {
     #gmail {
         font-size: 0.6rem !important;
