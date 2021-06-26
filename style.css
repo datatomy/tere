@@ -119,6 +119,7 @@ font-size: 3rem;
 }
 
 .fotosGaleria {
+    min-height: 463px;
     max-height: 463px;
     object-fit: cover;
 }
